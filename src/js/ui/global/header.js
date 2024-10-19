@@ -1,4 +1,4 @@
-import { logout } from '../auth/logout.js'; 
+import { logout } from '../auth/logout.js';
 
 /**
  * Creates the global header for the application.
@@ -20,14 +20,14 @@ export function createHeader() {
     </nav>
   `;
 
-  document.body.prepend(header); 
+  document.body.prepend(header);
 
   const logoutButton = document.getElementById('logout');
   if (logoutButton) {
     logoutButton.addEventListener('click', () => {
       const confirmation = confirm('Are you sure you want to log out?');
       if (confirmation) {
-        logout(); 
+        logout();
       }
     });
   }
