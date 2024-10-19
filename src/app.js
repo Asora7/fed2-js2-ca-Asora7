@@ -22,6 +22,8 @@ import { createHeader } from './js/ui/global/header.js'; // Import the header
  * setting up the router based on the current URL pathname.
  */
 
+
 createHeader();
 
 await router(window.location.pathname);
+

@@ -4,8 +4,7 @@
  * @async
  * @function onUpdateProfile
  * @param {Event} event - The event object from the form submission.
+ * TODO: Implement profile update logic later.
  */
 
-export async function onUpdateProfile(event) {
-    // implement profile update logic later
-}
+// export async function onUpdateProfile(event) {}

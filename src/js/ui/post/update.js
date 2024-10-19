@@ -7,6 +7,7 @@ import { updatePost } from "../../api/post/update.js";
  * @function onUpdatePost
  * @param {Event} event - The submit event triggered by the form.
  * @throws {Error} If the post update fails, it will log the error to the console.
+ * TODO: Use updatedPost to update the UI or provide feedback to the user.
  */
 
 export async function onUpdatePost(event) {
@@ -21,7 +22,8 @@ export async function onUpdatePost(event) {
     
     try {
         const updatedPost = await updatePost(postId, postData);
-
+        console.log("Post updated successfully:", updatedPost);
+        
     } catch (error) {
         console.error("Error updating post:", error);
     }

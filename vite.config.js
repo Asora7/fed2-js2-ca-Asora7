@@ -1,4 +1,5 @@
-import { resolve } from "path";
+import { resolve, dirname } from "path";
+import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
 
 /**
@@ -8,6 +9,10 @@ import { defineConfig } from "vite";
  * 
  * @module vite.config.js
  */
+
+// Define __dirname for ES module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
   /**
