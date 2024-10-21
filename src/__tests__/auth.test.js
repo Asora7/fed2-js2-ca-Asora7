@@ -1,4 +1,4 @@
-import jest from 'jest-mock'; 
+import jest from 'jest-mock';
 import { onLogin } from '../js/ui/auth/login';
 import { logout } from '../js/ui/auth/logout';
 
@@ -15,9 +15,10 @@ describe('Authentication Tests', () => {
     global.fetch = jest.fn(() =>
       Promise.resolve({
         ok: true,
-        json: () => Promise.resolve({
-          data: { accessToken: mockToken, name: 'Test User' },
-        }),
+        json: () =>
+          Promise.resolve({
+            data: { accessToken: mockToken, name: 'Test User' },
+          }),
       })
     );
 
@@ -28,7 +29,7 @@ describe('Authentication Tests', () => {
       <button type="submit">Login</button>
     </form>`;
 
-    const loginForm = document.forms['login'];
+    // const loginForm = document.forms['login'];
     await onLogin(new Event('submit', { bubbles: true }));
 
     expect(localStorage.getItem('token')).toBe(mockToken);
