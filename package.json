@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
+    "test:cypress": "cypress open"
   },
   "devDependencies": {
     "@babel/core": "^7.25.8",
