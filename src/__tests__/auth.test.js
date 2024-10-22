@@ -4,7 +4,7 @@ import { logout } from '../js/ui/auth/logout';
 
 /**
  * @module AuthenticationTests
- * 
+ *
  * This module contains tests for authentication functionalities,
  * specifically for user login and logout processes.
  */
@@ -12,7 +12,7 @@ describe('Authentication Tests', () => {
   /**
    * Runs before each test to set up the initial state.
    * Clears the localStorage to ensure a fresh environment for each test.
-   * 
+   *
    * @function beforeEach
    */
   beforeEach(() => {
@@ -22,13 +22,13 @@ describe('Authentication Tests', () => {
   /**
    * Tests the onLogin function to ensure it stores a token
    * in localStorage when provided with valid credentials.
-   * 
+   *
    * @test
-   * 
+   *
    * @example
    * const mockUserData = { email: 'test@example.com', password: 'password' };
    * const mockToken = 'mock-jwt-token';
-   * 
+   *
    * @assert
    * - The token should be stored in localStorage.
    * - The username should be stored in localStorage.
@@ -62,9 +62,9 @@ describe('Authentication Tests', () => {
   /**
    * Tests the logout function to ensure it clears the token
    * and username from localStorage.
-   * 
+   *
    * @test
-   * 
+   *
    * @assert
    * - The token should be removed from localStorage.
    * - The username should be removed from localStorage.

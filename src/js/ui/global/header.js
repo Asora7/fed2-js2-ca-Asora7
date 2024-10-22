@@ -10,8 +10,8 @@ import { logout } from '../auth/logout.js';
  *
  * @description
  * The header includes links to the home page, user profile, and post creation.
- * It also features a logout button that prompts the user for confirmation 
- * before calling the logout function. A message display area is included 
+ * It also features a logout button that prompts the user for confirmation
+ * before calling the logout function. A message display area is included
  * for showing any relevant messages to the user.
  */
 export function createHeader() {

@@ -2,8 +2,8 @@
  * ESLint Configuration
  *
  * This module exports an array containing ESLint configuration settings.
- * It defines the language options, including global variables for browser 
- * and Jest environments, as well as recommended settings from the ESLint 
+ * It defines the language options, including global variables for browser
+ * and Jest environments, as well as recommended settings from the ESLint
  * JavaScript plugin.
  *
  * @module ESLintConfig

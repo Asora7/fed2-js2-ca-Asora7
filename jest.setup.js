@@ -15,9 +15,9 @@
 
 Object.defineProperty(window, 'location', {
   value: {
-    href: '', 
-    assign: () => {}, 
-    replace: () => {}, 
+    href: '',
+    assign: () => {},
+    replace: () => {},
   },
-  writable: true, 
+  writable: true,
 });

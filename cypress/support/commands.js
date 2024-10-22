@@ -12,12 +12,11 @@
  */
 
 Cypress.Commands.add('login', (email, password) => {
-    cy.request({
-      method: 'POST',
-      url: 'https://v2.api.noroff.dev/auth/login', 
-      body: { email, password }
-    }).then((response) => {
-      window.localStorage.setItem('jwt', response.body.token);
-    });
+  cy.request({
+    method: 'POST',
+    url: 'https://v2.api.noroff.dev/auth/login',
+    body: { email, password },
+  }).then((response) => {
+    window.localStorage.setItem('jwt', response.body.token);
   });
-  
+});
